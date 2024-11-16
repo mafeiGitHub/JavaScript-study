@@ -1,0 +1,12 @@
+[
+    {
+        "name":"mawen",
+        "age":20,
+        "sex":"男"   
+    },  
+    {
+        "name":"mafei",
+        "age":25,
+        "sex":"男"   
+    }  
+]
