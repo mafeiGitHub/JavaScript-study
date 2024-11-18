@@ -72,7 +72,40 @@ console.log(nums2);
 let colors1 = ["red", "green", "blue"]; 
 let result = colors1.splice(0,1);//直接操作原数组
 console.log(colors1);//删除第一项
+console.log('---插入---');
+colors1 = ["red", "green", "blue"];
+colors1.splice(1,0,'aa','bb')//插入
+console.log(colors1);
+console.log('---替换---');
+colors1 = ["red", "green", "blue"];
+colors1.splice(1,1,'yellow')
+console.log(colors1);
+// 搜索方法 indexOf lastIndexof() includes()
+let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+console.log(numbers.indexOf(3));//找第一个
+console.log(numbers.lastIndexOf(3));//找最后一个
+console.log(numbers.includes(2));
+// 断言函数 find() findeIndex()
 
+
+
+const people = [
+  {
+    name:'mawen',
+    age:18
+  },
+  {
+    name:'mafei',
+    age:18
+  },
+]
+let res = people.find((element,index,array)=>element.age<28)
+console.log(res);
+res = people.findIndex((element,index,array)=>element.age<28)
+console.log(res);
+
+
+ 
 
  
 
