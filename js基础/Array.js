@@ -103,19 +103,60 @@ let res = people.find((element,index,array)=>element.age<28)
 console.log(res);
 res = people.findIndex((element,index,array)=>element.age<28)
 console.log(res);
+// 遍历方法 forEach() map() filter() reduce() every() some()
+console.log('---forEach---');
+
+let numbers1 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+let res1 = numbers1.forEach((element,index,array)=>{
+  
+  console.log(element); 
+
+})
+
+// map()
+res1 = numbers1.map((element,index,array)=>{
+  return element*2
+})
+console.log(res1);
+// every()用法
+res1 = numbers1.every((element,index,array)=>{
+  return element>2
+})
+console.log(res1);
+
+// some()用法
+res1 = numbers1.some((element,index,array)=>{
+  return element>0
+})
+console.log(res1);
+// filter()用法
+res1 = numbers1.filter((element,index,array)=>{
+  return element>2
+})
+console.log(res1);
+// reduce()用法 
+res1 = numbers1.reduce((prev,cur,index,array)=>{
+  return prev+cur
+})
+console.log(res1);
 
 
- 
-
- 
-
+//  map()用法 增加 查看 修改 删除
+let mapArray = new Map();
 
 
 
 
 
+console.log(mapArray.has('firstName'));
+console.log(mapArray.get('firstName'));
 
-
-
-
-
+mapArray.set('firstName','mawen');
+mapArray.set('lastName','fei');
+console.log(mapArray.get('firstName')); //获取值
+console.log(mapArray.has('firstName'));//判断有没有
+console.log(mapArray.size);//获取长度
+mapArray.delete('firstName');//删除
+console.log(mapArray.get('firstName')); //获取值
+mapArray.clear();//清空
+console.log(mapArray.get('firstName')); //获取值
