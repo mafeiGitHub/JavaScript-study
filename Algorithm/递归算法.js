@@ -8,6 +8,8 @@ b) 生成一个（2－32）之间的随机整数rand。
 c) 把随机数rand插入到数组arr内，如果数组arr内已存在与rand相同的数字，则重新生成随机数rand并插入到arr内[需要使用递归实现，不能使用for/while等循环]
 d) 最终输出一个长度为5，且内容不重复的数组arr。 
 */
+// 递归实现
+
 var arr = new Array(5);
 function insertRandom(n) {
   if (n < 0) return;
