@@ -30,3 +30,6 @@ console.log(data);
 
 
 
+setTimeout(function() {
+  
+} , 500);
