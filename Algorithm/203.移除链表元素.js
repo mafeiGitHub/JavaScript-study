@@ -21,13 +21,12 @@ var removeElements = function (head, val) {
   while (head && head.val === val) {
     head = head.next;
   }
-  let current = head;
-
-  while (current && current.next) {
-    if (current.next.val === val) {
-      current.next = current.next.next;
+  let cur = head;
+  while (cur && cur.next) {
+    if (cur.next.val === val) {
+      cur.next = cur.next.next;
     } else {
-      current = current.next;
+      cur = cur.next;
     }
   }
   return head;
